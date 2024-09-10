@@ -4,16 +4,19 @@
 
 @section('content')
     <main>
+        {{-- @dump($products) --}}
         <div class="container">
             <div class="row">
                 <div class="boxCard">
-                    <div class="DcCard">
-                        <div>
-                            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="descrizione alternativa">
-                            <h3> Action Comics </h3>
+                    @foreach ($products as $product)
+                        <div class="DcCard">
+                            <div>
+                                <img src="{{ $product['thumb'] }}" alt="{{ $product['title'] }}">
+                                <h3> {{ $product['title'] }} </h3>
+                            </div>
                         </div>
+                    @endforeach
 
-                    </div>
                 </div>
 
 
