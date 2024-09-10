@@ -1,0 +1,47 @@
+footer {
+    height: calc((100vh / 23) * 3);
+    background-color: #303030;
+    z-index: 1000;
+
+    div.container {
+        height: 100%;
+        width: 80%;
+
+        div.row {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            button {
+                margin: 0;
+                padding: 14px;
+                color: white;
+                background-color: #303030;
+                border: 2px solid $primary;
+                cursor: pointer;
+            }
+
+            a {
+                color: $primary;
+                font-weight: bold;
+            }
+
+            div {
+                margin: 0;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+}

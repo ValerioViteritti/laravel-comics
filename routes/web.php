@@ -19,10 +19,10 @@ Route::get('/', function () {
     return view('home', compact('text', 'title'));
 })->name('home');
 
-Route::get('/chi-siamo', function () {
-    return view('about');
-})->name('about');
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
 
-Route::get('/contatti', function () {
-    return view('contacts');
-})->name('contacts');
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comics');

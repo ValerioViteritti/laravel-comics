@@ -1,0 +1,74 @@
+main {
+
+    div.container {
+        height: 100%;
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        div.row {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+
+
+            .boxCard {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                height: 100%;
+                width: 70%;
+            }
+
+
+        }
+
+        div#Load {
+            color: white;
+            background-color: $primary;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 50px;
+            cursor: pointer;
+
+
+        }
+    }
+
+    .DcCard {
+        height: 200px;
+        width: 150px;
+
+
+
+        div {
+
+            img {
+                height: 150px;
+                width: 150px;
+                cursor: pointer;
+
+            }
+
+            h3 {
+                color: white;
+                cursor: pointer;
+                margin-top: 10px;
+                font-size: 14px;
+
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+}
