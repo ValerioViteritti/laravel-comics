@@ -6,8 +6,12 @@
                 <div id="linkNav">
                     <ul>
                         <li>
-                            <a href="#">Character</a>
-                            <a href="#">Comics</a>
+                            <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}"
+                                href="{{ route('home') }}">Home</a>
+                            <a class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"
+                                href="{{ route('characters') }}">Character</a>
+                            <a class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"
+                                href="{{ route('comics') }}">Comics</a>
                             <a href="#">Movies</a>
                             <a href="#">Tv</a>
                             <a href="#">Games</a>
