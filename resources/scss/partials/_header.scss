@@ -39,7 +39,8 @@ header {
                     a {
                         color: rgb(151, 151, 151);
 
-                        &:hover {
+                        &:hover,
+                        &.active {
                             border-bottom: 6px solid $primary;
                         }
                     }
