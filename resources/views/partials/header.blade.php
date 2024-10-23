@@ -2,12 +2,13 @@
     <nav>
         <div class="container">
             <div class="row">
-                <img src="img/dc-logo.png" alt="Logo DC Comics">
+                <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">
+                    <img src="/img/dc-logo.png" alt="Logo DC Comics">
+                </a>
+
                 <div id="linkNav">
                     <ul>
                         <li>
-                            <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}"
-                                href="{{ route('home') }}">Home</a>
                             <a class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"
                                 href="{{ route('characters') }}">Character</a>
                             <a class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"
